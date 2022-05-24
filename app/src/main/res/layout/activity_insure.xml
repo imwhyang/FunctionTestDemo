@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保单号" />
+
+            <EditText
+                android:id="@+id/edt_insuranceId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="1484363556864941021" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="险种号" />
+
+            <EditText
+                android:id="@+id/edt_riskCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="险种名" />
+
+            <EditText
+                android:id="@+id/edt_riskName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条款编号" />
+
+            <EditText
+                android:id="@+id/edt_clauseCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="条款名" />
+
+            <EditText
+                android:id="@+id/edt_clauseName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+        <!--        bean.animalType = 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牲畜类型：1猪、2牛" />
+
+            <EditText
+                android:id="@+id/edt_animalType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <!--        bean.livestockBreeds = 204-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牲畜品种：育肥203，能繁 204" />
+
+            <EditText
+                android:id="@+id/edt_livestockBreeds"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+        <!--        bean.enId = "1476095381895411011"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="企业id" />
+
+            <EditText
+                android:id="@+id/edt_enId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <!--        bean.enName = "温海洋测试兴企业1"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="企业名" />
+
+            <EditText
+                android:id="@+id/edt_enName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+        <!--        bean.createUserId = "1483369549313626113"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作人id" />
+
+            <EditText
+                android:id="@+id/edt_createUserId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <!--        bean.createUserName = "温海洋"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作人姓名" />
+
+            <EditText
+                android:id="@+id/edt_createUserName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_insure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="承保" />
+
+    </LinearLayout>
+</layout>

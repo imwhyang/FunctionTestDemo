@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
 }
-
+apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -89,7 +89,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     implementation 'io.github.lucksiege:pictureselector:v2.7.3-rc08'
-    implementation ('com.innovation.ai:breed-function-sdk-cic-test:1.3.87-bate-4'){
-        exclude group: 'com.github.bumptech.glide'
-    }
+//    compile 'com.innovation.ai:breed-function-sdk-anhua:1.3.88'
+//    compile 'com.innovation.ai:breed-function-sdk-anhua:1.3.89'
+//    compile 'com.innovation.ai:breed-function-sdk-anhua-test:1.3.88-beta01'
+//    compile 'com.innovation.ai:breed-function-sdk-cic-test:1.3.87-bate-5'
+
+//    implementation ('com.innovation.ai:breed-function-sdk-anhua-test:1.3.88-beta01'){
+    implementation 'com.innovation.ai:breed-function-sdk-cic-test:1.4.0-bate'
+//    implementation ('com.innovation.ai:breed-function-sdk-cic-test:1.3.87-bate-5'){
+//        exclude group: 'com.github.bumptech.glide'
+//    }
 }

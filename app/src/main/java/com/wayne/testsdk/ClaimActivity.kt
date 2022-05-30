@@ -47,22 +47,52 @@ class ClaimActivity : AppCompatActivity() {
             btnInsure.setOnClickListener {
 
                 val bean = CasesCallbackBean()
-                bean.deptCode = "3210606CIC/20220517ZBNXB"
-                bean.deptName = "中华联合保险/总部农险部"
-//                bean.insuranceId = "1484363556864941021"
-                bean.policyNo = edtInsuranceId.text.toString()
-                bean.caseNo = edtCaseNo.text.toString()
-//                bean.riskCode = edtRiskCode.text.toString()
-//                bean.riskName = edtRiskName.text.toString()
-//                bean.clauseCode = edtClauseCode.text.toString()
-//                bean.clauseName = edtClauseName.text.toString()
-                bean.animalType = edtAnimalType.text.toString().toInt()
-//                bean.livestockBreeds = edtLivestockBreeds.text.toString().toInt()
-//                bean.insuranceMethod = 1
-                bean.enId = edtEnId.text.toString()
-                bean.enName = edtEnName.text.toString()
-                bean.createUserId = edtCreateUserId.text.toString()
-                bean.createUserName = edtCreateUserName.text.toString()
+//                兴农保
+//                bean.deptCode = "3210606CIC/20220517ZBNXB"
+//                bean.deptName = "中华联合保险/总部农险部"
+
+
+//                安华
+                bean.deptCode = "3210707AHBX/22010000"
+                bean.deptName = "安华保险/安华农业保险股份有限公司长春中心支公司"
+
+//                bean.policyNo = edtInsuranceId.text.toString()
+//                bean.caseNo = edtCaseNo.text.toString()
+//                bean.animalType = edtAnimalType.text.toString().toInt()
+//                bean.enId = edtEnId.text.toString()
+//                bean.enName = edtEnName.text.toString()
+//                bean.createUserId = edtCreateUserId.text.toString()
+//                bean.createUserName = edtCreateUserName.text.toString()
+
+
+
+//                "{\"accdntReasonName\":\"自然灾害\"," +
+//                        "\"accdntTime\":1645600080000," +
+//                        "\"address\":\"吉林省长春市九台区其塔木镇北山村\"," +
+//                        "\"animalId\":\"1503895507594416129\"," +
+//                        "\"caseNo\":\"RIJR202222010000000008\"," +
+//                        "\"caseUserName\":\"李傲冬\"," +
+//                        "\"createUserId\":\"0000012227\"," +
+//                        "\"createUserName\":\"薛雁鸣\"," +
+//                        "\"deptCode\":\"3210707AHBX/22010000\"," +
+//                        "\"deptName\":\"安华保险/安华农业保险股份有限公司长春中心支公司\"," +
+//                        "\"dieNum\":1," +
+//                        "\"enId\":\"1\"," +
+//                        "\"enName\":\"李傲冬\"," +
+//                        "\"latitude\":40.039841," +
+//                        "\"longitude\":116.414749," +
+//                        "\"policyNo\":\"PIJR202222010000000002\"}"
+
+                bean.policyNo = "PIJR202222010000000002"
+                bean.caseNo = "RIJR202222010000000008"
+                bean.animalType = 2
+                bean.enId = "1"
+                bean.enName = "李傲冬"
+                bean.createUserId = "0000012227"
+                bean.createUserName = "李傲冬"
+
+
+
                 bean.longitude = 116.414777
                 bean.latitude = 40.03988
                 bean.address = "中国北京朝阳立水桥office"

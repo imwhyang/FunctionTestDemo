@@ -2,8 +2,7 @@ package com.wayne.testsdk
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.blankj.utilcode.util.GsonUtils
-import com.google.gson.Gson
+import com.bumptech.glide.Glide
 import com.innovation.animal.breedfunctionsdk.SDK
 import com.innovation.animal.breedfunctionsdk.bean.CreatInsuredEntranceBean
 import com.wayne.testsdk.databinding.ActivityInsureBinding
@@ -55,35 +54,41 @@ class InsureActivity : AppCompatActivity() {
 //                ), this@InsureActivity
 //            )
             btnInsure.setOnClickListener {
-
                 val bean = CreatInsuredEntranceBean()
-                bean.deptCode = "3210606CIC/20220517ZBNXB"
-                bean.deptName = "中华联合保险/总部农险部"
+//                bean.deptCode = "3210606CIC/20220517ZBNXB"
+//                bean.deptName = "中华联合保险/总部农险部"
+
+                //                安华
+                bean.deptCode = "3210707AHBX/22010000"
+                bean.deptName = "安华保险/安华农业保险股份有限公司长春中心支公司"
+
 //                bean.insuranceId = "1484363556864941021"
-                bean.insuranceId = edtInsuranceId.text.toString()
 //                bean.riskCode = "170203"
 //                bean.riskName = "中华育肥猪险"
 //                bean.clauseCode = "256314"
 //                bean.clauseName = "中华育肥猪测试默认条款"
-//                bean.animalType = 1
+//                bean.animalType = 2
 //                bean.livestockBreeds = 204
+//                bean.enId = "1476095381895411011"
+//                bean.enName = "温海洋测试兴企业1"
+//                bean.createUserId = "1483369549313626113"
+//                bean.createUserName = "温海洋"
+
+                bean.insuranceId = edtInsuranceId.text.toString()
                 bean.riskCode = edtRiskCode.text.toString()
                 bean.riskName = edtRiskName.text.toString()
                 bean.clauseCode = edtClauseCode.text.toString()
                 bean.clauseName = edtClauseName.text.toString()
                 bean.animalType = edtAnimalType.text.toString().toInt()
                 bean.livestockBreeds = edtLivestockBreeds.text.toString().toInt()
-                bean.insuranceMethod = 1
-
-//                bean.enId = "1476095381895411011"
-//                bean.enName = "温海洋测试兴企业1"
                 bean.enId = edtEnId.text.toString()
                 bean.enName = edtEnName.text.toString()
-                bean.breedMethod = "1"
                 bean.createUserId = edtCreateUserId.text.toString()
                 bean.createUserName = edtCreateUserName.text.toString()
-//                bean.createUserId = "1483369549313626113"
-//                bean.createUserName = "温海洋"
+
+
+                bean.insuranceMethod = "1"
+                bean.breedMethod = "1"
                 bean.longitude = 116.414777
                 bean.latitude = 40.03988
                 bean.address = "中国北京朝阳立水桥office"

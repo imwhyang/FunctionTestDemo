@@ -106,6 +106,7 @@
                 android:text="牲畜类型：1猪、2牛" />
 
             <EditText
+                android:text="2"
                 android:id="@+id/edt_animalType"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
@@ -125,7 +126,7 @@
                 android:id="@+id/edt_livestockBreeds"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="" />
+                android:text="204" />
         </LinearLayout>
         <!--        bean.enId = "1476095381895411011"-->
         <LinearLayout

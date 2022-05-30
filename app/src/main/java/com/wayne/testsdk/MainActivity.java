@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binder = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binder.getRoot());
+        SDK.init(getApplication());
         List<String> strings = new ArrayList<>();
         strings.add(Permission.ACCESS_FINE_LOCATION);
         strings.add(Permission.ACCESS_COARSE_LOCATION);

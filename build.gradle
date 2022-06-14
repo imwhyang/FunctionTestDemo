@@ -45,13 +45,8 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
 
-        maven { url 'https://maven.aliyun.com/repository/google/' }
-
-        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
-
-        maven { url 'https://maven.aliyun.com/repository/central/' }
         maven {
             credentials {
 //                username '6087e4ca3a10edbf3697b7bb'
@@ -72,9 +67,20 @@ allprojects {
             }
             url 'https://packages.aliyun.com/maven/repository/2099367-snapshot-EUD1nV/'
         }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+
+        maven { url 'https://maven.aliyun.com/repository/central/' }
+
         maven { url 'https://jitpack.io' }
+        maven { url 'https://repo1.maven.org/maven2/' }
         maven { url 'https://gitee.com/liuchaoya/libcommon/raw/master/repository/' }
+        mavenCentral()
+        maven { url "http://maven.rongcloud.cn/repository/maven-releases/" }
+        maven { url 'https://developer.huawei.com/repo/' }
     }
+
 }
 
 task clean(type: Delete) {

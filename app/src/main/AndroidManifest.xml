@@ -44,7 +44,6 @@
         android:name="android.hardware.camera"
         android:required="true" />
     <application
-        android:name=".MyApp"
         android:allowBackup="true"
         android:appComponentFactory="@string/app_name"
         android:icon="@mipmap/ic_launcher"

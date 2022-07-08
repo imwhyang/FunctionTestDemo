@@ -59,49 +59,99 @@ public class MainActivity extends AppCompatActivity {
 //                super.sendInsureResult(insureId, enId);
 //            }
 
+//            @Override
+//            public void insuredEntranceResult(String animalId, String earLabNo) {
+//                super.insuredEntranceResult(animalId, earLabNo);
+//            }
+
+//            @Override
+//            public void deleteAnimalResult(String mes) {
+//                super.deleteAnimalResult(mes);
+//            }
+
+//            @Override
+//            public void errorResult(String error) {
+//                super.errorResult(error);
+//            }
+
+//            @Override
+//            public void scanFaceResult(String animalId) {
+////                Timber.d("scanFaceResult: bean==" + animalId);
+//            }
+//
+//            @Override
+//            public void lengthWeightResult(LengthWeightResultBean bean) {
+////                Timber.d("lengthWeightResult: bean==" + bean.toString());
+//                ToastUtils.success(bean.toString());
+//            }
+//
+//            @Override
+//            public void checkPositioningBarResult(String pointsVideoUrl, int pointNumber) {
+////                Timber.d("checkPositioningBarResult: " + "点数视频路径==" + pointsVideoUrl + "      猪头数==" + pointNumber);
+//                ToastUtils.success("点数视频路径==" + pointsVideoUrl + "      猪头数==" + pointNumber);
+//            }
+//
+//            @Override
+//            public void checkNumberResult(ArrayList<PointsResultBean> mNumList) {
+////                Timber.d("checkNumberResult: ===" + mNumList.toString());
+//                ToastUtils.success("点数数据有" + mNumList.size() + "个");
+//            }
+//
+//            @Override
+//            public void insuredEntrance(String msg) {
+//                ToastUtils.success(msg);
+//            }
+
+
             @Override
-            public void insuredEntranceResult(String animalId, String earLabNo) {
-                super.insuredEntranceResult(animalId, earLabNo);
+            public void onCheckNumberResult(ArrayList<PointsResultBean> mNumList) {
+                super.onCheckNumberResult(mNumList);
             }
 
             @Override
-            public void deleteAnimalResult(String mes) {
-                super.deleteAnimalResult(mes);
+            public void onSendInsureResult(String insureId, String enId) {
+                super.onSendInsureResult(insureId, enId);
             }
 
             @Override
-            public void errorResult(String error) {
-                super.errorResult(error);
+            public void onSendCasesResult(String caseId) {
+                super.onSendCasesResult(caseId);
             }
 
             @Override
-            public void scanFaceResult(String animalId) {
-//                Timber.d("scanFaceResult: bean==" + animalId);
+            public void onCheckPositioningBarResult(String pointsVideoUrl, int pointNumber) {
+                super.onCheckPositioningBarResult(pointsVideoUrl, pointNumber);
             }
 
             @Override
-            public void lengthWeightResult(LengthWeightResultBean bean) {
-//                Timber.d("lengthWeightResult: bean==" + bean.toString());
-                ToastUtils.success(bean.toString());
+            public void onLengthWeightResult(LengthWeightResultBean bean) {
+                super.onLengthWeightResult(bean);
             }
 
             @Override
-            public void checkPositioningBarResult(String pointsVideoUrl, int pointNumber) {
-//                Timber.d("checkPositioningBarResult: " + "点数视频路径==" + pointsVideoUrl + "      猪头数==" + pointNumber);
-                ToastUtils.success("点数视频路径==" + pointsVideoUrl + "      猪头数==" + pointNumber);
+            public void onInsuredEntrance(String msg) {
+                super.onInsuredEntrance(msg);
             }
 
             @Override
-            public void checkNumberResult(ArrayList<PointsResultBean> mNumList) {
-//                Timber.d("checkNumberResult: ===" + mNumList.toString());
-                ToastUtils.success("点数数据有" + mNumList.size() + "个");
+            public void onInsuredEntranceResult(String animalId, String earLabNo) {
+                super.onInsuredEntranceResult(animalId, earLabNo);
             }
 
             @Override
-            public void insuredEntrance(String msg) {
-                ToastUtils.success(msg);
+            public void onScanFaceResult(String animalId) {
+                super.onScanFaceResult(animalId);
             }
 
+            @Override
+            public void onDeleteAnimalResult(String mes) {
+                super.onDeleteAnimalResult(mes);
+            }
+
+            @Override
+            public void onErrorResult(String error) {
+                super.onErrorResult(error);
+            }
         });
 
         binder.btnInsure.setOnClickListener(v -> {

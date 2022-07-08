@@ -2,8 +2,10 @@ package com.wayne.testsdk
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.blankj.utilcode.util.GsonUtils
 import com.innovation.animal.breedfunctionsdk.SDK
 import com.innovation.animal.breedfunctionsdk.bean.CasesCallbackBean
+import com.innovation.animal.breedfunctionsdk.bean.GyicInsuredEntranceBean
 import com.wayne.testsdk.databinding.ActivityClaimBinding
 
 /**
@@ -48,13 +50,13 @@ class ClaimActivity : AppCompatActivity() {
 
                 val bean = CasesCallbackBean()
 //                兴农保
-//                bean.deptCode = "3210606CIC/20220517ZBNXB"
-//                bean.deptName = "中华联合保险/总部农险部"
+                bean.deptCode = "3210606CIC/20220517ZBNXB"
+                bean.deptName = "中华联合保险/总部农险部"
 
 
 //                安华
-                bean.deptCode = "3210707AHBX/22010000"
-                bean.deptName = "安华保险/安华农业保险股份有限公司长春中心支公司"
+//                bean.deptCode = "3210707AHBX/22010000"
+//                bean.deptName = "安华保险/安华农业保险股份有限公司长春中心支公司"
 
 //                bean.policyNo = edtInsuranceId.text.toString()
 //                bean.caseNo = edtCaseNo.text.toString()
@@ -63,7 +65,6 @@ class ClaimActivity : AppCompatActivity() {
 //                bean.enName = edtEnName.text.toString()
 //                bean.createUserId = edtCreateUserId.text.toString()
 //                bean.createUserName = edtCreateUserName.text.toString()
-
 
 
 //                "{\"accdntReasonName\":\"自然灾害\"," +
@@ -83,13 +84,13 @@ class ClaimActivity : AppCompatActivity() {
 //                        "\"longitude\":116.414749," +
 //                        "\"policyNo\":\"PIJR202222010000000002\"}"
 
-                bean.policyNo = "PIJR202222010000000002"
-                bean.caseNo = "RIJR202222010000000008"
-                bean.animalType = 2
-                bean.enId = "1"
-                bean.enName = "李傲冬"
-                bean.createUserId = "0000012227"
-                bean.createUserName = "李傲冬"
+//                bean.policyNo = "PIJR202222010000000002"
+//                bean.caseNo = "RIJR202222010000000008"
+//                bean.animalType = 2
+//                bean.enId = "1"
+//                bean.enName = "李傲冬"
+//                bean.createUserId = "0000012227"
+//                bean.createUserName = "李傲冬"
 
 
 
@@ -105,6 +106,8 @@ class ClaimActivity : AppCompatActivity() {
                 SDK.casesCallback(
                     this@ClaimActivity, bean
                 )
+
+
             }
         }
 
